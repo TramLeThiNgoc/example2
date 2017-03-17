@@ -9,13 +9,16 @@
       <td>Password</td><td><input type="password" name="pass" value="" required=""></td>
     </tr>
     <tr>
-      <td></td><td><input type="submit" name="" value="Login"></td>
+      <td></td><td><input type="submit" name="btnLogin" value="Login"></td>
     </tr>
   </table>
 </form>
 <?php
+session_start();
 $btn=$_POST['btnLogin'];
 if(isset($btn)){
+  $_SESSION['username']=$_POST['user'];
+
   echo 'Hello '.$_POST['user'];
 }
  ?>
