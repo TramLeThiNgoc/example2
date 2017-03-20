@@ -18,10 +18,11 @@ $ad=$theArray['streetaddress'];
    <input type="text" name="ln" id="ln" value="<?php echo $ln; ?>" required=""><br>
 
    <label for="ad">Streetaddress</label><br>
-   <input type="text" name="ad" id="st" value="<?php echo $ad; ?>"><br>
+   <input type="text" name="ad" id="ad" value="<?php echo $ad; ?>"><br>
 
-   <input type="hidden" name="id" value="<?php echo $_GET['id'];?>">
+
    <br>
+   <input type="hidden" name="id" value="<?php echo $_GET['id'];?>">
    <input type="submit" name="btnEdit" value="Update">
  </form>
 <?php include "footer.php"; ?>
