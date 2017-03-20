@@ -23,6 +23,11 @@ if(isset($_POST['btnEdit'])){
   $id=$_POST['id'];
   $add->execute();
 }
+
+if(isset($_POST['btnDelete'])){
+  $deleteSQL="DELETE FROM customers WHERE id_customers=".$_POST['id'];
+  $db->query($deleteSQL);
+}
  ?>
 
 
